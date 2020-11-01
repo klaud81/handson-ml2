@@ -43,7 +43,9 @@ ENV PATH /opt/conda/envs/tf2/bin:$PATH
 #       to get nbdiff between checkpointed version and current version of the
 # given notebook.
 
-RUN git-nbdiffdriver config --enable --global
+#RUN pip install --upgrade nbdime
+
+#RUN git-nbdiffdriver config --enable --global
 
 # INFO: Optionally uncomment any (one) of the following RUN commands below to ignore either
 #       metadata or details in nbdiff within git diff
